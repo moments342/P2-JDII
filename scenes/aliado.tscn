@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d2ah0k8ldtrsy"]
+
+[ext_resource type="Script" uid="uid://cku1q6n3i384j" path="res://scripts/aliado.gd" id="1_aliado"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_corpo"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_resgate"]
+
+[node name="aliado" type="CharacterBody2D" unique_id=1200496862]
+collision_layer = 8
+script = ExtResource("1_aliado")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=647772547]
+shape = SubResource("CircleShape2D_corpo")
+
+[node name="AreaResgate" type="Area2D" parent="." unique_id=241072495]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaResgate" unique_id=2105291394]
+shape = SubResource("CircleShape2D_resgate")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=500515535]

@@ -16,8 +16,17 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=960
+window/size/viewport_height=640
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[layer_names]
+
+2d_physics/layer_1="Cenario"
+2d_physics/layer_2="Jogador"
+2d_physics/layer_3="Inimigos"
+2d_physics/layer_4="Aliados"
 
 [physics]
 

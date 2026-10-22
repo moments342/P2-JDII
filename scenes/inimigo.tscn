@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://pp4gyovql1ul"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yaqan"]
+
+[node name="inimigo" type="CharacterBody2D" unique_id=910294992]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=400554106]
+shape = SubResource("CapsuleShape2D_yaqan")

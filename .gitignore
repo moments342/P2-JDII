@@ -1,3 +1,10 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+/tests/
+
+/export_templates/
+/feature_profiles/
+/script_templates/
+/text_editor_themes/

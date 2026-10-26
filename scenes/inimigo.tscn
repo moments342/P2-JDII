@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://pp4gyovql1ul"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yaqan"]
+[ext_resource type="Script" uid="uid://daefjuwfvcfxs" path="res://scripts/inimigo.gd" id="1_inimigo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_inimigo"]
+radius = 5.0
 
 [node name="inimigo" type="CharacterBody2D" unique_id=910294992]
+collision_layer = 4
+script = ExtResource("1_inimigo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=400554106]
-shape = SubResource("CapsuleShape2D_yaqan")
+shape = SubResource("CircleShape2D_inimigo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2058245949]

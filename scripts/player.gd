@@ -45,11 +45,8 @@ func _physics_process(delta: float) -> void:
 		_atualizar_animacao(Vector2.ZERO)
 		return
 
-	var direcao := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	direcao += Vector2(
-		float(Input.is_physical_key_pressed(KEY_D)) - float(Input.is_physical_key_pressed(KEY_A)),
-		float(Input.is_physical_key_pressed(KEY_S)) - float(Input.is_physical_key_pressed(KEY_W))
-	)
+	var direcao := Input.get_vector("esquerda", "direita", "cima", "baixo")
+	direcao += Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 
 	velocity = direcao.limit_length() * velocidade
 

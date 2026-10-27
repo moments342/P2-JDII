@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://c47jgh2s81f7o" path="res://sprites/tile/PNG/walls_floor.png" id="1_7q5ye"]
 [ext_resource type="Texture2D" uid="uid://cinb3b3ebk7o1" path="res://sprites/tile/ST-Schl-E01.png" id="2_vuywt"]
+[ext_resource type="PackedScene" uid="uid://djk8mm4t12euc" path="res://scenes/player.tscn" id="3_player"]
+[ext_resource type="PackedScene" uid="uid://pp4gyovql1ul" path="res://scenes/inimigo.tscn" id="4_inimigo"]
+[ext_resource type="PackedScene" uid="uid://d2ah0k8ldtrsy" path="res://scenes/aliado.tscn" id="5_aliado"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vuywt"]
 texture = ExtResource("1_7q5ye")
@@ -338,3 +341,12 @@ tile_set = SubResource("TileSet_dke5c")
 
 [node name="decoração" type="TileMapLayer" parent="." unique_id=1326735124]
 tile_set = SubResource("TileSet_njqwk")
+
+[node name="player" parent="." instance=ExtResource("3_player")]
+position = Vector2(480, 320)
+
+[node name="inimigo" parent="." instance=ExtResource("4_inimigo")]
+position = Vector2(640, 320)
+
+[node name="aliado" parent="." instance=ExtResource("5_aliado")]
+position = Vector2(352, 320)

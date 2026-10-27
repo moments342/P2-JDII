@@ -10,6 +10,7 @@ extends CharacterBody2D
 var jogador: Jogador
 var _tempo_ate_ataque: float = 0.0
 var _direcao_visual: String = "baixo"
+var _atacando: bool = false
 
 @onready var _visual: AnimatedSprite2D = get_node_or_null("AnimatedSprite2D")
 
@@ -17,12 +18,17 @@ var _direcao_visual: String = "baixo"
 func _ready() -> void:
 	add_to_group("inimigos")
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
+	if _visual != null:
+		_visual.animation_finished.connect(_ao_animacao_finalizada)
 	_atualizar_animacao(Vector2.ZERO)
 
 
 func _physics_process(delta: float) -> void:
 	_tempo_ate_ataque = maxf(0.0, _tempo_ate_ataque - delta)
 	velocity = Vector2.ZERO
+
+	if _atacando:
+		return
 
 	if not is_instance_valid(jogador):
 		jogador = get_tree().get_first_node_in_group("jogador") as Jogador
@@ -41,6 +47,7 @@ func _physics_process(delta: float) -> void:
 
 	if distancia <= alcance_ataque and _sem_parede_entre_nos():
 		if _tempo_ate_ataque <= 0.0:
+			_iniciar_animacao_ataque(jogador.global_position - global_position)
 			jogador.receber_dano(dano)
 			_tempo_ate_ataque = intervalo_ataque
 	else:
@@ -60,19 +67,48 @@ func _sem_parede_entre_nos() -> bool:
 	return get_world_2d().direct_space_state.intersect_ray(consulta).is_empty()
 
 
-func _atualizar_animacao(deslocamento: Vector2) -> void:
+func _iniciar_animacao_ataque(direcao: Vector2) -> void:
 	if _visual == null or _visual.sprite_frames == null:
+		return
+
+	_atualizar_direcao_visual(direcao)
+	var nome := StringName("atacar_" + _direcao_visual)
+	if not _visual.sprite_frames.has_animation(nome):
+		return
+	if _visual.sprite_frames.get_frame_count(nome) == 0:
+		return
+
+	_atacando = true
+	_visual.play(nome)
+
+
+func _ao_animacao_finalizada() -> void:
+	if not _atacando:
+		return
+
+	_atacando = false
+	_atualizar_animacao(Vector2.ZERO)
+
+
+func _atualizar_direcao_visual(direcao: Vector2) -> void:
+	if direcao.is_zero_approx():
+		return
+
+	if absf(direcao.x) > absf(direcao.y):
+		_direcao_visual = "direita" if direcao.x > 0.0 else "esquerda"
+	else:
+		_direcao_visual = "baixo" if direcao.y > 0.0 else "cima"
+
+
+func _atualizar_animacao(deslocamento: Vector2) -> void:
+	if _atacando or _visual == null or _visual.sprite_frames == null:
 		return
 
 	var andando := deslocamento.length_squared() > 0.0001
 	var nome: StringName = &"parado"
 
 	if andando:
-		if absf(deslocamento.x) > absf(deslocamento.y):
-			_direcao_visual = "direita" if deslocamento.x > 0.0 else "esquerda"
-		else:
-			_direcao_visual = "baixo" if deslocamento.y > 0.0 else "cima"
-
+		_atualizar_direcao_visual(deslocamento)
 		nome = StringName("andar_" + _direcao_visual)
 
 	if not _visual.sprite_frames.has_animation(nome):

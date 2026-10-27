@@ -1,12 +1,280 @@
 [gd_scene format=3 uid="uid://d2ah0k8ldtrsy"]
 
 [ext_resource type="Script" uid="uid://cku1q6n3i384j" path="res://scripts/aliado.gd" id="1_aliado"]
+[ext_resource type="Texture2D" uid="uid://djhqc21csr5um" path="res://sprites/aliado/RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman.png" id="2_mulher_azul"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_corpo"]
 radius = 10.049875
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_resgate"]
 radius = 19.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_esquerda_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_esquerda_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_esquerda_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_esquerda_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_direita_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_direita_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_direita_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_direita_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_cima_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_cima_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_cima_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_parado_cima_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_baixo_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_baixo_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_baixo_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_baixo_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_esquerda_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_esquerda_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_esquerda_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_esquerda_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_direita_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_direita_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_direita_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_direita_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_cima_0"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_cima_1"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_cima_2"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_andar_cima_3"]
+atlas = ExtResource("2_mulher_azul")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aliada"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_3")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_esquerda_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_esquerda_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_esquerda_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_esquerda_3")
+}],
+"loop": true,
+"name": &"parado_esquerda",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_direita_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_direita_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_direita_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_direita_3")
+}],
+"loop": true,
+"name": &"parado_direita",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_cima_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_cima_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_cima_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_parado_cima_3")
+}],
+"loop": true,
+"name": &"parado_cima",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_baixo_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_baixo_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_baixo_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_baixo_3")
+}],
+"loop": true,
+"name": &"andar_baixo",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_esquerda_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_esquerda_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_esquerda_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_esquerda_3")
+}],
+"loop": true,
+"name": &"andar_esquerda",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_direita_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_direita_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_direita_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_direita_3")
+}],
+"loop": true,
+"name": &"andar_direita",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_cima_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_cima_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_cima_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_andar_cima_3")
+}],
+"loop": true,
+"name": &"andar_cima",
+"speed": 10.0
+}]
 
 [node name="aliado" type="CharacterBody2D" unique_id=1200496862]
 collision_layer = 8
@@ -24,3 +292,5 @@ monitorable = false
 shape = SubResource("CircleShape2D_resgate")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=500515535]
+sprite_frames = SubResource("SpriteFrames_aliada")
+animation = &"parado"

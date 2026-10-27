@@ -97,7 +97,9 @@ func _atualizar_animacao(deslocamento: Vector2) -> void:
 		return
 
 	var andando := deslocamento.length_squared() > 0.0001
-	var nome: StringName = &"parado"
+	var nome := StringName("parado_" + _direcao_visual)
+	if not _visual.sprite_frames.has_animation(nome):
+		nome = &"parado"
 
 	if andando:
 		if absf(deslocamento.x) > absf(deslocamento.y):

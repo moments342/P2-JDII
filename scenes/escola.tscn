@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://djk8mm4t12euc" path="res://scenes/player.tscn" id="3_player"]
 [ext_resource type="PackedScene" uid="uid://pp4gyovql1ul" path="res://scenes/inimigo.tscn" id="4_inimigo"]
 [ext_resource type="PackedScene" uid="uid://d2ah0k8ldtrsy" path="res://scenes/aliado.tscn" id="5_aliado"]
+[ext_resource type="PackedScene" path="res://scenes/interface_resgate.tscn" id="6_interface"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vuywt"]
 texture = ExtResource("1_7q5ye")
@@ -350,3 +351,5 @@ position = Vector2(640, 320)
 
 [node name="aliado" parent="." instance=ExtResource("5_aliado")]
 position = Vector2(352, 320)
+
+[node name="InterfaceResgate" parent="." instance=ExtResource("6_interface")]

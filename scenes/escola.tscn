@@ -471,7 +471,31 @@ position = Vector2(480, 320)
 [node name="inimigo" parent="." unique_id=229442285 instance=ExtResource("4_inimigo")]
 position = Vector2(640, 320)
 
+[node name="inimigo2" parent="." unique_id=1487608297 instance=ExtResource("4_inimigo")]
+position = Vector2(240, 40)
+
+[node name="inimigo3" parent="." unique_id=1139873190 instance=ExtResource("4_inimigo")]
+position = Vector2(720, 40)
+
+[node name="inimigo4" parent="." unique_id=477462563 instance=ExtResource("4_inimigo")]
+position = Vector2(304, 480)
+
+[node name="inimigo5" parent="." unique_id=1829649360 instance=ExtResource("4_inimigo")]
+position = Vector2(656, 480)
+
 [node name="aliado" parent="." unique_id=1477856965 instance=ExtResource("5_aliado")]
 position = Vector2(352, 320)
+
+[node name="aliado2" parent="." unique_id=163316030 instance=ExtResource("5_aliado")]
+position = Vector2(208, 160)
+
+[node name="aliado3" parent="." unique_id=970595715 instance=ExtResource("5_aliado")]
+position = Vector2(752, 160)
+
+[node name="aliado4" parent="." unique_id=1015658929 instance=ExtResource("5_aliado")]
+position = Vector2(208, 480)
+
+[node name="aliado5" parent="." unique_id=611516196 instance=ExtResource("5_aliado")]
+position = Vector2(752, 480)
 
 [node name="InterfaceResgate" parent="." unique_id=1889299978 instance=ExtResource("6_interface")]

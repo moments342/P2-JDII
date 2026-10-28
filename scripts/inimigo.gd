@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 @export var velocidade: float = 75.0
 @export_range(0.0, 2000.0, 1.0) var distancia_deteccao: float = 180.0
-@export_range(1.0, 100.0, 1.0) var alcance_ataque: float = 16.0
+@export_range(1.0, 100.0, 1.0) var alcance_ataque: float = 32.0
 @export_range(1, 100, 1) var dano: int = 1
 @export_range(0.05, 10.0, 0.05) var intervalo_ataque: float = 1.0
 

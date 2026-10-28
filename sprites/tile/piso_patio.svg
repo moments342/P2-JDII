@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<!-- Piso do patio: placas de pedra em tom areia, com juntas desencontradas. -->
+<rect width="64" height="64" fill="#a5a28e"/>
+<rect x="1" y="1" width="31" height="31" fill="#c7bfa7"/>
+<path fill="#e3dac2" fill-opacity="0.65" d="M1 1h31v1h-31zM1 2h1v29h-1z"/>
+<path fill="#aaa58f" d="M2 31h30v1h-30z"/>
+<rect x="33" y="1" width="31" height="31" fill="#cac2aa"/>
+<path fill="#e3dac2" fill-opacity="0.65" d="M33 1h31v1h-31zM33 2h1v29h-1z"/>
+<path fill="#aaa58f" d="M34 31h30v1h-30z"/>
+<rect x="-15" y="33" width="31" height="31" fill="#c8c0a8"/>
+<path fill="#e3dac2" fill-opacity="0.65" d="M-15 33h31v1h-31zM-15 34h1v29h-1z"/>
+<path fill="#aaa58f" d="M-14 63h30v1h-30z"/>
+<rect x="17" y="33" width="31" height="31" fill="#c5bea6"/>
+<path fill="#e3dac2" fill-opacity="0.65" d="M17 33h31v1h-31zM17 34h1v29h-1z"/>
+<path fill="#aaa58f" d="M18 63h30v1h-30z"/>
+<rect x="49" y="33" width="31" height="31" fill="#c8c0a8"/>
+<path fill="#e3dac2" fill-opacity="0.65" d="M49 33h31v1h-31zM49 34h1v29h-1z"/>
+<path fill="#aaa58f" d="M50 63h30v1h-30z"/>
+<path fill="#e1d8c0" fill-opacity="0.32" d="M30 61h1v1h-1zM59 41h1v1h-1zM4 55h1v1h-1zM58 43h1v1h-1zM18 27h1v1h-1zM55 25h1v1h-1zM38 46h1v1h-1zM58 37h1v1h-1zM9 42h1v1h-1zM20 28h1v1h-1zM63 50h1v1h-1zM20 53h1v1h-1zM37 48h1v1h-1zM35 25h1v1h-1zM53 11h1v1h-1zM59 52h1v1h-1zM37 21h1v1h-1zM54 55h1v1h-1zM52 8h1v1h-1zM22 62h1v1h-1zM43 46h1v1h-1zM18 25h1v1h-1zM25 9h1v1h-1zM48 16h1v1h-1zM43 40h1v1h-1zM57 63h1v1h-1zM37 16h1v1h-1zM47 41h1v1h-1zM63 48h1v1h-1zM38 5h1v1h-1zM57 56h1v1h-1zM39 25h1v1h-1zM61 35h1v1h-1zM40 22h1v1h-1zM51 39h1v1h-1zM15 15h1v1h-1zM12 26h1v1h-1zM14 9h1v1h-1zM53 56h1v1h-1zM52 13h1v1h-1zM50 50h1v1h-1z"/>
+<path fill="#aaa58f" fill-opacity="0.32" d="M9 54h1v1h-1zM18 59h1v1h-1zM23 41h1v1h-1zM50 26h1v1h-1zM48 28h1v1h-1zM28 48h1v1h-1zM62 9h1v1h-1zM35 13h1v1h-1zM42 62h1v1h-1zM36 61h1v1h-1zM29 6h1v1h-1zM59 58h1v1h-1zM45 16h1v1h-1zM25 35h1v1h-1zM19 19h1v1h-1zM6 8h1v1h-1zM35 30h1v1h-1zM20 58h1v1h-1zM14 40h1v1h-1zM55 54h1v1h-1zM30 35h1v1h-1zM15 17h1v1h-1zM11 54h1v1h-1zM24 49h1v1h-1zM37 59h1v1h-1zM43 10h1v1h-1zM61 56h1v1h-1zM16 58h1v1h-1zM11 16h1v1h-1zM44 5h1v1h-1zM24 9h1v1h-1zM27 25h1v1h-1zM21 55h1v1h-1zM6 53h1v1h-1zM47 7h1v1h-1zM59 54h1v1h-1zM52 5h1v1h-1zM26 35h1v1h-1z"/>
+</svg>

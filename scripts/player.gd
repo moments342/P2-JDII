@@ -10,7 +10,7 @@ signal caminho_atualizado(posicao: Vector2, distancia: float)
 @export_range(1, 100, 1) var vida_maxima: int = 5
 @export_range(0.05, 5.0, 0.05) var tempo_invulneravel: float = 0.8
 @export_range(0.03, 0.5, 0.01) var intervalo_piscar: float = 0.1
-@export_range(12.0, 100.0, 1.0) var espacamento_aliados: float = 18.0
+@export_range(12.0, 100.0, 1.0) var espacamento_aliados: float = 32.0
 
 var vida_atual: int
 var morto: bool = false

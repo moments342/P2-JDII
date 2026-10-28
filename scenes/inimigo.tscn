@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cyscv2jxvgd14" path="res://sprites/monstro/free_monster_pack_frakassets/mushroom-monster-red/mushroom-monster-red_32px_top-down_outline_lit.png" id="2_monstro"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_inimigo"]
-radius = 5.0
+radius = 10.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_parado_0"]
 atlas = ExtResource("2_monstro")
@@ -559,6 +559,7 @@ animations = [{
 }]
 
 [node name="inimigo" type="CharacterBody2D" unique_id=910294992]
+y_sort_enabled = true
 collision_layer = 4
 script = ExtResource("1_inimigo")
 
@@ -566,5 +567,8 @@ script = ExtResource("1_inimigo")
 shape = SubResource("CircleShape2D_inimigo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2058245949]
+position = Vector2(0, 12)
+scale = Vector2(2, 2)
+offset = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_inimigo")
 animation = &"parado"

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cmys3062qsh6h" path="res://sprites/aliado/RPG Top Down Characters - Free Version/Blonde Man/blonde_man.png" id="2_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_player"]
-radius = 5.0
+radius = 10.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vida_fundo"]
 bg_color = Color(0.18, 0.18, 0.18, 1)
@@ -181,13 +181,14 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D" unique_id=450588820]
+y_sort_enabled = true
 collision_layer = 2
 collision_mask = 1
 motion_mode = 1
 script = ExtResource("1_player")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=531986282]
-position = Vector2(0, 8)
+position = Vector2(0, 16)
 shape = SubResource("CircleShape2D_player")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=887580322]
@@ -213,5 +214,8 @@ value = 5.0
 show_percentage = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2078414398]
+position = Vector2(0, 30)
+scale = Vector2(2, 2)
+offset = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_3vyb7")
 animation = &"parado"

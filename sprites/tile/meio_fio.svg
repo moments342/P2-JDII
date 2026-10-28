@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- Atlas 3 x 3: cantos e segmentos de meio-fio em celulas de 16 px. -->
+  <path fill="#687164" d="M10 12H38V40H10ZM16 18V32H32V18Z" fill-rule="evenodd"/>
+  <path fill="#b9bdac" d="M10 10H38V38H10ZM16 16V32H32V16Z" fill-rule="evenodd"/>
+  <path fill="#e1e2cc" d="M10 10H38V11H10ZM10 11H11V37H10ZM32 16H33V32H32ZM16 32H32V33H16Z"/>
+  <path fill="#7b8574" d="M11 15H32V16H16V32H15V16H11ZM37 11H38V38H10V37H37Z"/>
+  <path fill="#d0d2be" d="M11 11H37V12H11ZM11 16H12V32H11ZM34 16H35V32H34ZM16 34H32V35H16Z"/>
+  <path fill="#8d9784" d="M31 11H32V15H31ZM31 33H32V37H31ZM11 31H15V32H11ZM33 31H37V32H33Z"/>
+</svg>
